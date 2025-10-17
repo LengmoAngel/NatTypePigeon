@@ -39,6 +39,10 @@ GET /healthz -> {"ok": true}
 
 Build the container image using the supplied Dockerfile (Node 20 Alpine). A compose file is also available for convenience.
 
+## Version control notes
+
+Keep the generated `package-lock.json` in the repository so installations stay reproducible across environments. The lockfile is required for CI and container builds that rely on deterministic dependency resolution.
+
 ## Self Check
 
 Run `scripts/selfcheck.sh` to print the active STUN configuration. This helps verify environment variables before executing RFC5780 probing.
