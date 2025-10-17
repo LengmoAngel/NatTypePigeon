@@ -2,6 +2,8 @@
 
 This project provides a minimal NAT type detection backend using WebRTC signalling over WebSockets.
 
+[中文文档](README.zh-CN.md)
+
 ## Getting Started
 
 ```bash
